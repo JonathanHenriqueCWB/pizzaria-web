@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj": {}
+    "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
+    "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Jony\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Willian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Willian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,17 +59,17 @@
         }
       }
     },
-    "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj": {
+    "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
         "projectName": "PizzariaWeb",
-        "projectPath": "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
-        "packagesPath": "C:\\Users\\Jony\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\PizzariaWeb\\obj\\",
+        "projectPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
+        "packagesPath": "C:\\Users\\Willian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\PizzariaWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Willian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,11 +82,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj"
+              "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj"
+              "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj"
               }
             }
           }
@@ -140,17 +140,17 @@
         }
       }
     },
-    "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj": {
+    "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Jony\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Willian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Willian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -163,8 +163,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jony\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj"
+              "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj"
               }
             }
           }

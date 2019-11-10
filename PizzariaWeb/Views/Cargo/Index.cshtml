@@ -27,7 +27,7 @@
 </div>
 <div class="col-sm-6">
     <h2>Registrar Cargo</h2>
-    <form asp-action="Index" method="post">
+    <form id="cadastrarCargo" asp-action="Index" method="post">
         <fieldset>
             <legend>Cadastrar Produto</legend>
             <div asp-validation-summary="ModelOnly" class="text-primary"></div>
@@ -42,9 +42,7 @@
                 <input type="text" asp-for="Salario" class="form-control" />
             </div>
 
-            <input type="submit" class="btn btn-success" value="Cadastrar" />
+            <input id="btnCadastrarCargo" type="submit" class="btn btn-success" value="Cadastrar" />
         </fieldset>
     </form>
 </div>
-
-

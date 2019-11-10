@@ -18,9 +18,14 @@ namespace PizzariaWeb.Controllers
         }
         #endregion
         #region INDEX LISTAR CADASTRAR
-        public IActionResult Index()
+        public IActionResult Index(bool isJson)
         {
-            ViewBag.ListaCargo = _cargoDAO.Listar();
+            List<Cargo> cargos = _cargoDAO.Listar();
+            ViewBag.ListaCargo = cargos;
+
+            if (isJson)
+                return Json(cargos);
+
             return View();
         }
         [HttpPost]
