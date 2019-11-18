@@ -91,6 +91,82 @@ namespace Repository.Migrations
                     b.ToTable("Funcionarios");
                 });
 
+            modelBuilder.Entity("Domain.Models.ItemBebida", b =>
+                {
+                    b.Property<int>("ItemBebidaId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("BebidaId");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<int?>("VendaId");
+
+                    b.HasKey("ItemBebidaId");
+
+                    b.HasIndex("BebidaId");
+
+                    b.HasIndex("VendaId");
+
+                    b.ToTable("ItemBebidas");
+                });
+
+            modelBuilder.Entity("Domain.Models.ItemPizza", b =>
+                {
+                    b.Property<int>("ItemPizzaId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("PizzaId");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<int?>("VendaId");
+
+                    b.HasKey("ItemPizzaId");
+
+                    b.HasIndex("PizzaId");
+
+                    b.HasIndex("VendaId");
+
+                    b.ToTable("ItemPizzas");
+                });
+
+            modelBuilder.Entity("Domain.Models.ItemSabor", b =>
+                {
+                    b.Property<int>("ItemSaborId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("PizzaId");
+
+                    b.Property<int?>("SaborId");
+
+                    b.HasKey("ItemSaborId");
+
+                    b.HasIndex("PizzaId");
+
+                    b.HasIndex("SaborId");
+
+                    b.ToTable("ItemSabores");
+                });
+
+            modelBuilder.Entity("Domain.Models.Pizza", b =>
+                {
+                    b.Property<int>("PizzaId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("TamanhoId");
+
+                    b.HasKey("PizzaId");
+
+                    b.HasIndex("TamanhoId");
+
+                    b.ToTable("Pizzas");
+                });
+
             modelBuilder.Entity("Domain.Models.Sabor", b =>
                 {
                     b.Property<int>("SaborId")
@@ -142,6 +218,23 @@ namespace Repository.Migrations
                     b.ToTable("Usuarios");
                 });
 
+            modelBuilder.Entity("Domain.Models.Venda", b =>
+                {
+                    b.Property<int>("VendaId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<double>("Preco");
+
+                    b.Property<int?>("UsuarioId");
+
+                    b.HasKey("VendaId");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("Vendas");
+                });
+
             modelBuilder.Entity("Domain.Models.Funcionario", b =>
                 {
                     b.HasOne("Domain.Models.Cargo", "Cargo")
@@ -149,11 +242,58 @@ namespace Repository.Migrations
                         .HasForeignKey("CargoId");
                 });
 
+            modelBuilder.Entity("Domain.Models.ItemBebida", b =>
+                {
+                    b.HasOne("Domain.Models.Bebida", "Bebida")
+                        .WithMany()
+                        .HasForeignKey("BebidaId");
+
+                    b.HasOne("Domain.Models.Venda")
+                        .WithMany("ListaBebida")
+                        .HasForeignKey("VendaId");
+                });
+
+            modelBuilder.Entity("Domain.Models.ItemPizza", b =>
+                {
+                    b.HasOne("Domain.Models.Pizza", "Pizza")
+                        .WithMany()
+                        .HasForeignKey("PizzaId");
+
+                    b.HasOne("Domain.Models.Venda")
+                        .WithMany("ListaPizza")
+                        .HasForeignKey("VendaId");
+                });
+
+            modelBuilder.Entity("Domain.Models.ItemSabor", b =>
+                {
+                    b.HasOne("Domain.Models.Pizza")
+                        .WithMany("itemSabores")
+                        .HasForeignKey("PizzaId");
+
+                    b.HasOne("Domain.Models.Sabor", "Sabor")
+                        .WithMany()
+                        .HasForeignKey("SaborId");
+                });
+
+            modelBuilder.Entity("Domain.Models.Pizza", b =>
+                {
+                    b.HasOne("Domain.Models.Tamanho", "Tamanho")
+                        .WithMany()
+                        .HasForeignKey("TamanhoId");
+                });
+
             modelBuilder.Entity("Domain.Models.Usuario", b =>
                 {
                     b.HasOne("Domain.Models.Endereco", "Endereco")
                         .WithMany()
                         .HasForeignKey("EnderecoId");
+                });
+
+            modelBuilder.Entity("Domain.Models.Venda", b =>
+                {
+                    b.HasOne("Domain.Models.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId");
                 });
 #pragma warning restore 612, 618
         }

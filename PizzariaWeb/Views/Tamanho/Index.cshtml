@@ -1,62 +1,64 @@
 ﻿@model Tamanho
 
-<div class="col-sm-6">
-    <h2>Tamanhos registrados</h2>
-    <table style="margin-bottom:15px;margin-top:15px"
-           class="table table-hover table-striped">
-        <thead>
-            <tr class="table-active">
-                <th>Tamanho</th>
-                <th>Preço</th>
-                <th>Quantiade Sabores</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (Tamanho item in ViewBag.ListaTamanho)
-            {
-                <tr>
-                    <td>@item.Nome</td>
-                    <td>@item.Preco</td>
-                    <td>@item.QtdSabores</td>
-                    <td class="text-right">
-                        <a class="btn btn-danger" asp-action="Remover" asp-route-id="@item.TamanhoId">Remover</a>
-                    </td>
+<div class="row">
+    <div class="col-sm-6">
+        <h2>Tamanhos registrados</h2>
+        <table style="margin-bottom:15px;margin-top:15px"
+               class="table table-hover table-striped">
+            <thead>
+                <tr class="table-active">
+                    <th>Tamanho</th>
+                    <th>Preço</th>
+                    <th>Quantiade Sabores</th>
+                    <th></th>
                 </tr>
-            }
-        </tbody>
-    </table>
-</div>
-<div class="col-sm-6">
-    <h2>Registrar Tamanho</h2>
-    <form asp-action="Index" method="post">
-        <fieldset>
-            <legend>Cadastrar Produto</legend>
-            <div asp-validation-summary="ModelOnly" class="text-primary"></div>
+            </thead>
+            <tbody>
+                @foreach (Tamanho item in ViewBag.ListaTamanho)
+                {
+                    <tr>
+                        <td>@item.Nome</td>
+                        <td>@item.Preco</td>
+                        <td>@item.QtdSabores</td>
+                        <td class="text-right">
+                            <a class="btn btn-danger" asp-action="Remover" asp-route-id="@item.TamanhoId">Remover</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-6">
+        <h2>Registrar Tamanho</h2>
+        <form asp-action="Index" method="post">
+            <fieldset>
+                <legend>Cadastrar Produto</legend>
+                <div asp-validation-summary="ModelOnly" class="text-primary"></div>
 
-            <div class="form-group" id="Nome">
-                <label>Nome</label>
-                <input type="text" asp-for="Nome" class="form-control" />
-            </div>
+                <div class="form-group" id="Nome">
+                    <label>Nome</label>
+                    <input type="text" asp-for="Nome" class="form-control" />
+                </div>
 
-            <div class="form-group" id="Preco">
-                <label>Preço</label>
-                <input type="text" asp-for="Preco" class="form-control" />
-            </div>
-            <div class="form-group" id="QtdSabores">
-                <label>Quantidade De Sabores</label>
-                <select class="form-control" name="drpQntdSabores">
-                    <option> -- SELECIONE -- </option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-            </div>
+                <div class="form-group" id="Preco">
+                    <label>Preço</label>
+                    <input type="text" asp-for="Preco" class="form-control" />
+                </div>
+                <div class="form-group" id="QtdSabores">
+                    <label>Quantidade De Sabores</label>
+                    <select class="form-control" name="drpQntdSabores">
+                        <option> -- SELECIONE -- </option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
 
-            <input type="submit" class="btn btn-success" value="Cadastrar" />
-        </fieldset>
-    </form>
+                <input type="submit" class="btn btn-success" value="Cadastrar" />
+            </fieldset>
+        </form>
+    </div>
 </div>
 
 

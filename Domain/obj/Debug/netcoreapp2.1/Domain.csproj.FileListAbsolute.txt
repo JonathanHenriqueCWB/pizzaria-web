@@ -21,3 +21,4 @@ C:\Users\Jony\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.Assembly
 C:\Users\Jony\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs
 C:\Users\Jony\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.dll
 C:\Users\Jony\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.pdb
+C:\Users\Jony\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.csprojAssemblyReference.cache

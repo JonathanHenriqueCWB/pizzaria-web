@@ -20,6 +20,11 @@ namespace Repository.DATA
         public DbSet<Bebida> Bebidas { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
+        public DbSet<ItemSabor> ItemSabores { get; set; }
+        public DbSet<Pizza> Pizzas { get; set; }
+        public DbSet<ItemPizza> ItemPizzas { get; set; }
+        public DbSet<ItemBebida> ItemBebidas { get; set; }
+        public DbSet<Venda> Vendas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -30,6 +35,11 @@ namespace Repository.DATA
             modelBuilder.Entity<Bebida>().ToTable("Bebidas");
             modelBuilder.Entity<Usuario>().ToTable("Usuarios");
             modelBuilder.Entity<Endereco>().ToTable("Enderecos");
+            modelBuilder.Entity<ItemSabor>().ToTable("ItemSabores");
+            modelBuilder.Entity<Pizza>().ToTable("Pizzas");
+            modelBuilder.Entity<ItemPizza>().ToTable("ItemPizzas");
+            modelBuilder.Entity<ItemBebida>().ToTable("ItemBebidas");
+            modelBuilder.Entity<Venda>().ToTable("Vendas");
         }
 
     }
