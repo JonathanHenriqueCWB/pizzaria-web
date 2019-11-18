@@ -100,7 +100,7 @@ using Domain.Models;
             WriteLiteral("</td>\r\n                    <td class=\"text-right\">\r\n                        ");
             EndContext();
             BeginContext(553, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "af65cc89c84b4fa5b494faf97cf773bf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bef82096511c47a7bbe7542336a256dd", async() => {
                 BeginContext(629, 7, true);
                 WriteLiteral("Remover");
                 EndContext();
@@ -144,12 +144,12 @@ using Domain.Models;
             WriteLiteral("        </tbody>\r\n    </table>\r\n</div>\r\n<div class=\"col-sm-6\">\r\n    <h2>Registrar Sabor</h2>\r\n    ");
             EndContext();
             BeginContext(805, 497, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28123129e70140ed8fb193e7da574c8c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1f5c4ed80ff34d58bc9629c0e40e6371", async() => {
                 BeginContext(844, 82, true);
                 WriteLiteral("\r\n        <fieldset>\r\n            <legend>Cadastrar Produto</legend>\r\n            ");
                 EndContext();
                 BeginContext(926, 67, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d3a3b21beec94030a01feb6881d18234", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b9e655f5d20f49ccac8719702e83d249", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper>();
@@ -173,7 +173,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper.ValidationSumma
                 WriteLiteral("\r\n\r\n            <div class=\"form-group\" id=\"Nome\">\r\n                <label>Nome</label>\r\n                ");
                 EndContext();
                 BeginContext(1098, 57, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "31564ff65fa24302b6142a55dc7492b0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2b200c1268b444b5a1dd9fea58ca4358", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

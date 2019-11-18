@@ -59,7 +59,7 @@ using Domain.Models;
             WriteLiteral("\r\n<h2>Index</h2>\r\n");
             EndContext();
             BeginContext(34, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63211b65670740c1884e71de4ffc88e6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "137520c5cee44c64b8a47ad868312e0a", async() => {
                 BeginContext(60, 22, true);
                 WriteLiteral("Cadastrar novo usuario");
                 EndContext();

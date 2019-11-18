@@ -1,8 +1,8 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
 }
 
 /* Wrapping element */
@@ -33,5 +33,55 @@ body {
     /* Hide captions */
     .carousel-caption {
         display: none;
+    }
+}
+
+
+/********************************************************************/
+
+.main-menu ul li a {
+    color: #CC0000;
+    font-size: 1.2em;
+    border-bottom: 1px solid #CC0000;
+}
+.main-menu ul li a:hover {
+    color: red !important;
+    /*border-bottom: 1px solid red;*/
+}
+
+nav.main-menu {
+    border-bottom: .01em solid #CC0000;
+}
+
+.div-background {
+    background: linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5)), url("/images/pizza-background.jpg");
+    background-size: cover;
+}
+
+nav {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.desktop{
+    display: none !important;
+}
+
+nav .desktop .logo {
+    position: absolute;
+    right: 36.6em;
+    bottom: -3em;
+}
+
+    nav .desktop .logo img {
+        height: 110px;
+    }
+
+
+@media screen and (min-width: 640px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: flex !important;
     }
 }

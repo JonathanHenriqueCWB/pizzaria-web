@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - PizzariaWeb</title>
+    <title>@ViewData["Title"]</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -17,22 +18,49 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">PizzariaWeb</a>
+    <nav class="navbar navbar-expand-lg main-menu">
+
+        <div class="mobile">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon mr-0"><img src="~/images/logo.png" height="70" /></span>
+            </button>
+            <div class="collapse navbar-collapse mt-4" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+        </div>
+
+        <div class="container justify-content-center desktop">
+            <div class="row">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-4 active">
+                        <a class="nav-link pb-1 px-0" asp-controller="Home" asp-action="Index">Início <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link pb-1 px-0 mr-5" asp-controller="Usuario" asp-action="Index">Clientes</a>
+                    </li>
+                    <a class="navbar-brand mr-0 logo" asp-controller="Home" asp-action="Index"><img src="~/images/logo.png" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <li class="nav-item px-4">
+                        <a class="nav-link pb-1 px-0 ml-5" asp-controller="Funcionario" asp-action="Index">Funcionários</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link pb-1 px-0" asp-controller="Cargo" asp-action="Index">Cargos</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -40,15 +68,17 @@
 
     <partial name="_CookieConsentPartial" />
 
-    <div class="container body-content">
-        <div style="min-height:700px">
-            @RenderBody()
-        </div>
-        <div class="col-sm-12">
-            <hr />
-            <footer>
-                <p>&copy; 2019 - PizzariaWeb</p>
-            </footer>
+    <div class="div-background">
+        <div class="container body-content">
+            <div style="min-height:700px">
+                @RenderBody()
+            </div>
+            <div class="col-sm-12">
+                <hr />
+                <footer>
+                    <p>&copy; 2019 - BigPizza</p>
+                </footer>
+            </div>
         </div>
     </div>
 
