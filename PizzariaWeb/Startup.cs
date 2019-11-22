@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Domain.Models;
+using EcommerceEcoville.Utils;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -41,16 +42,28 @@ namespace PizzariaWeb
             services.AddScoped<SaborDAO>();
             services.AddScoped<BebidaDAO>();
             services.AddScoped<UsuarioDAO>();
+            services.AddScoped<UtilsSession>();
+            services.AddHttpContextAccessor();
+
+
+            //Configuração do contexto para as migrações
+            services.AddDbContext<PizzariaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PizzariaConnection")));
+
+
+            //Configuração da sessão deve ser colocada ANTES
+            //do services.AddMvc()
+            services.AddSession();
+            services.AddDistributedMemoryCache();
 
             //Autenticação de usuario IdentityUser
             services.AddIdentity<UsuarioLogado, IdentityRole>().AddEntityFrameworkStores<PizzariaContext>().AddDefaultTokenProviders();
+
             services.ConfigureApplicationCookie(option => {
                 option.LoginPath = "/Usuario/Login";
                 option.AccessDeniedPath = "/Usuario/AcessoNegado";
             });
 
-            //Configuração do contexto para as migrações
-            services.AddDbContext<PizzariaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PizzariaConnection")));
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -68,6 +81,8 @@ namespace PizzariaWeb
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseSession();
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {

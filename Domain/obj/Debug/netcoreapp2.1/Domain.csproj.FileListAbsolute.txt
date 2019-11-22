@@ -25,7 +25,6 @@ C:\Users\Jony\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.csprojAs
 C:\Users\1714987\Desktop\PizzariaWeb\Domain\bin\Debug\netcoreapp2.1\Domain.deps.json
 C:\Users\1714987\Desktop\PizzariaWeb\Domain\bin\Debug\netcoreapp2.1\Domain.dll
 C:\Users\1714987\Desktop\PizzariaWeb\Domain\bin\Debug\netcoreapp2.1\Domain.pdb
-C:\Users\1714987\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.csprojAssemblyReference.cache
 C:\Users\1714987\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.csproj.CoreCompileInputs.cache
 C:\Users\1714987\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfoInputs.cache
 C:\Users\1714987\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs

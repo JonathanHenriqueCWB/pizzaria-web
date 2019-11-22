@@ -169,6 +169,7 @@ C:\Users\1714987\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\Razor\V
 C:\Users\1714987\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\Razor\Views\Tamanho\Index.g.cshtml.cs
 C:\Users\1714987\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Cadastrar.g.cshtml.cs
 C:\Users\1714987\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Index.g.cshtml.cs
+C:\Users\1714987\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Login.g.cshtml.cs
 C:\Users\1714987\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
 C:\Users\1714987\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\1714987\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\PizzariaWeb.RazorTargetAssemblyInfo.cache

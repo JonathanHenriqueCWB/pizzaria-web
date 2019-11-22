@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.AspNetCore.Identity.SignInManager<UsuarioLogado> signInManager
+@inject Microsoft.AspNetCore.Identity.UserManager<UsuarioLogado> userManager
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -30,6 +33,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
                 </li>
+                @if (signInManager.IsSignedIn(User))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Logout" asp-controller="Usuario"><h5>@userManager.GetUserName(User) - Logout</h5></a>
+                    </li>
+                }
+                else {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Login" asp-controller="Usuario"><h5>Login</h5></a>
+                    </li>
+                }
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
