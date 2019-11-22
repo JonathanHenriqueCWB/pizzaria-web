@@ -1,4 +1,5 @@
 ﻿using Domain.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace Repository.DATA
 {
-    public class PizzariaContext : DbContext
+    public class PizzariaContext : IdentityDbContext<UsuarioLogado>
     {
 
         public PizzariaContext(DbContextOptions<PizzariaContext> options) : base(options)
@@ -40,6 +41,8 @@ namespace Repository.DATA
             modelBuilder.Entity<ItemPizza>().ToTable("ItemPizzas");
             modelBuilder.Entity<ItemBebida>().ToTable("ItemBebidas");
             modelBuilder.Entity<Venda>().ToTable("Vendas");
+
+            base.OnModelCreating(modelBuilder);
         }
 
     }

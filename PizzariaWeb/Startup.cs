@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Domain.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -39,6 +41,13 @@ namespace PizzariaWeb
             services.AddScoped<SaborDAO>();
             services.AddScoped<BebidaDAO>();
             services.AddScoped<UsuarioDAO>();
+
+            //Autenticação de usuario IdentityUser
+            services.AddIdentity<UsuarioLogado, IdentityRole>().AddEntityFrameworkStores<PizzariaContext>().AddDefaultTokenProviders();
+            services.ConfigureApplicationCookie(option => {
+                option.LoginPath = "/Usuario/Login";
+                option.AccessDeniedPath = "/Usuario/AcessoNegado";
+            });
 
             //Configuração do contexto para as migrações
             services.AddDbContext<PizzariaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PizzariaConnection")));
