@@ -178,3 +178,4 @@ C:\Users\1714987\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\Pizzari
 C:\Users\1714987\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\PizzariaWeb.csproj.CopyComplete
 C:\Users\1714987\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\PizzariaWeb.dll
 C:\Users\1714987\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\PizzariaWeb.pdb
+C:\Users\Aluno\Desktop\PizzariaWeb\PizzariaWeb\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Login.g.cshtml.cs

@@ -4413,25 +4413,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\1714987\\.nuget\\packages\\": {},
+    "C:\\Users\\Aluno\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1714987\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\Users\\1714987\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj",
-      "packagesPath": "C:\\Users\\1714987\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1714987\\Desktop\\PizzariaWeb\\Repository\\obj\\",
+      "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj",
+      "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\1714987\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -4445,8 +4445,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\1714987\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\1714987\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj"
+            "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj"
             }
           }
         }
