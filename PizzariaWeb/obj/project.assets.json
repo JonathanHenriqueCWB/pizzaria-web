@@ -12670,11 +12670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
       "projectName": "PizzariaWeb",
-      "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
+      "projectPath": "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\PizzariaWeb\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\PizzariaWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -12695,11 +12695,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj"
+            "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj"
+            "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\Repository\\Repository.csproj"
             }
           }
         }

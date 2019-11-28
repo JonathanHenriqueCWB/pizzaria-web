@@ -12582,11 +12582,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\API\\API.csproj",
+      "projectPath": "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\API\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -12607,8 +12607,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj"
+            "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\Repository\\Repository.csproj"
             }
           }
         }

@@ -1,0 +1,123 @@
+﻿@Model  Venda
+﻿
+<div class="row">
+    <div class="col col-sm-8">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h2>Selecione o Tamanho</h2>
+
+                <table style="margin-bottom:15px;margin-top:15px"
+                       class="table table-hover table-striped">
+                    <thead>
+                        <tr class="table-active">
+                            <th>Tamanho</th>
+                            <th>Preço</th>
+                            <th>Quantiade Sabores</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Tamanho item in ViewBag.ListaTamanho)
+                        {
+                            <tr>
+                                <td>@item.Nome</td>
+                                <td>@item.Preco</td>
+                                <td>@item.QtdSabores</td>
+                                <td class="text-right">
+                                    <a class="btn btn-success" asp-action="SelecionarTamanho" asp-route-TamanhoId="@item.TamanhoId">Selecionar</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-sm-12">
+                <h2>Selecioner os Sabores</h2>
+                <table style="margin-bottom:15px;margin-top:15px"
+                       class="table table-hover table-striped">
+                    <thead>
+                        <tr class="table-active">
+                            <th>Nome</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Sabor item in ViewBag.ListaSabor)
+                        {
+                            <tr>
+                                <td>@item.Nome</td>
+                                <td class="text-right">
+                                    <a class="btn btn-success" asp-action="SelecionarSabor" asp-route-SaborId="@item.SaborId">Selecionar</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col col-sm-12">
+                <h2>Selecione Bebida</h2>
+                <table style="margin-bottom:15px;margin-top:15px"
+                       class="table table-hover table-striped">
+                    <thead>
+                        <tr class="table-active">
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Bebida item in ViewBag.ListaBebida)
+                        {
+                            <tr>
+                                <td>@item.Nome</td>
+                                <td>@item.Preco</td>
+                                <td class="text-right">
+                                    <a class="btn btn-success" asp-action="SelecionarBebida" asp-route-BebidaId="@item.BebidaId">Selecionar</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col col-sm-4">
+        <h2>Pedido</h2>
+        <form asp-action="Index" method="post">
+            <fieldset>
+
+                <legend>Tamanho</legend>
+                <hr />
+                <div class="form-group" id="Nome">
+                    @ViewBag.Tamanho
+                </div>
+
+                <legend>Sabores</legend>
+                <hr />
+                <div class="form-group" id="Sabores">
+                    @ViewBag.Sabor
+                </div>
+
+                <legend>Bebidas</legend>
+                <div class="form-group" id="Bebidas">
+                    @ViewBag.Bebida
+                </div>
+                <hr />
+
+                <div asp-validation-summary="ModelOnly" class="text-primary"></div>
+
+                <input type="submit" class="btn btn-success" asp-action="FecharPizza" value="Fechar Pizza" />
+                <input type="submit" class="btn btn-success" asp-action="TerminarPedido" value="Terminar Pedido" />
+            </fieldset>
+
+        </form>
+    </div>
+</div>

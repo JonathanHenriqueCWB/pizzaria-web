@@ -42,6 +42,7 @@ namespace PizzariaWeb
             services.AddScoped<SaborDAO>();
             services.AddScoped<BebidaDAO>();
             services.AddScoped<UsuarioDAO>();
+            services.AddScoped<VendaDAO>();
             services.AddScoped<UtilsSession>();
             services.AddHttpContextAccessor();
 

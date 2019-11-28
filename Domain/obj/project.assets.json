@@ -4090,11 +4090,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\Desktop\\Nova pasta\\PizzariaWeb\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

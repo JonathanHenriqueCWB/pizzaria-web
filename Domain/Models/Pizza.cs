@@ -13,5 +13,11 @@ namespace Domain.Models
         public int PizzaId { get; set; }
         public Tamanho Tamanho { get; set; }
         public List<ItemSabor> itemSabores { get; set; }
+
+        public Pizza()
+        {
+            Tamanho = new Tamanho();
+            itemSabores = new List<ItemSabor>();
+        }
     }
 }
