@@ -31,7 +31,7 @@ namespace PizzariaWeb.Controllers
         #region INDEX LISTAR
         public IActionResult Index()
         {
-            return View();
+            return View(_usuarioDAO.ListarTodos());
         }
         #endregion
         #region CADASTRAR

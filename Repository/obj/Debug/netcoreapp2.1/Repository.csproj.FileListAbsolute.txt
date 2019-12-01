@@ -56,3 +56,14 @@ C:\Users\Aluno\Desktop\Nova pasta\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1
 C:\Users\Aluno\Desktop\Nova pasta\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
 C:\Users\Aluno\Desktop\Nova pasta\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.dll
 C:\Users\Aluno\Desktop\Nova pasta\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
+C:\Users\Willian\Desktop\PizzariaWeb\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+C:\Users\Willian\Desktop\PizzariaWeb\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+C:\Users\Willian\Desktop\PizzariaWeb\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+C:\Users\Willian\Desktop\PizzariaWeb\Repository\bin\Debug\netcoreapp2.1\Domain.dll
+C:\Users\Willian\Desktop\PizzariaWeb\Repository\bin\Debug\netcoreapp2.1\Domain.pdb
+C:\Users\Willian\Desktop\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+C:\Users\Willian\Desktop\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+C:\Users\Willian\Desktop\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+C:\Users\Willian\Desktop\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
+C:\Users\Willian\Desktop\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+C:\Users\Willian\Desktop\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.pdb

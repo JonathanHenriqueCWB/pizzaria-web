@@ -1,29 +1,38 @@
 ﻿@model List<Funcionario>
 
-<h2>Gerenciamento de Funcionarios</h2>
-<a class="btn btn-info" asp-action="Cadastrar">Cadastrar Funcionario</a>
+<div class="card">
+    <div class="card-header row justify-content-between">
+        <div class="col-8">
+            <h5>Gerenciamento de Funcionários</h5>
+        </div>
+        <div class="col-2 text-center pl-5">
+            <a class="btn btn-info" asp-action="Cadastrar">Cadastrar</a>
+        </div>
+    </div>
+    <div class="card-body">
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>CPF</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (Funcionario item in Model)
-        {
-            <tr>
-                <td>@item.Nome</td>
-                <td>@item.Cpf</td>
-                <td class="text-right">
-                    <a class="btn btn-danger" asp-action="Remover" asp-route-id="@item.FuncionarioId">Remover</a>
-                    <a class="btn btn-warning" asp-action="Alterar" asp-route-id="@item.FuncionarioId">Alterar</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Funcionario item in Model)
+                {
+                    <tr>
+                        <td>@item.Nome</td>
+                        <td>@item.Cargo</td>
+                        <td class="text-right">
+                            <a class="btn btn-outline-danger" asp-action="Remover" asp-route-id="@item.FuncionarioId"><i class="fas fa-trash-alt"></i></a>
+                            <a class="btn btn-outline-warning" asp-action="Alterar" asp-route-id="@item.FuncionarioId"><i class="far fa-edit"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
 
-
+    </div>
+</div>

@@ -1,5 +1,38 @@
-﻿@model Usuario
+﻿@model List<Usuario>
 
-<h2>Index</h2>
-<a asp-action="Cadastrar">Cadastrar novo usuario</a>
+<div class="card">
+    <div class="card-header row justify-content-between">
+        <div class="col-8">
+            <h5>Gerenciamento de Usuários</h5>
+        </div>
+        <div class="col-2 text-center pl-5">
+            <a class="btn btn-info" asp-action="Cadastrar">Cadastrar</a>
+        </div>
+    </div>
+    <div class="card-body">
 
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>E-mail</th>
+                    <th>Endereço</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Usuario item in Model)
+                {
+                    <tr>
+                        <td>@item.Email</td>
+                        <td>@item.Endereco</td>
+                        <td class="text-right">
+                            <a class="btn btn-outline-danger" asp-action="Remover" asp-route-id="@item.UsuarioId"><i class="fas fa-trash-alt"></i></a>
+                            <a class="btn btn-outline-warning" asp-action="Alterar" asp-route-id="@item.UsuarioId"><i class="far fa-edit"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
