@@ -67,3 +67,15 @@ C:\Users\Willian\Desktop\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Reposito
 C:\Users\Willian\Desktop\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
 C:\Users\Willian\Desktop\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.dll
 C:\Users\Willian\Desktop\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
+D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Repository\bin\Debug\netcoreapp2.1\Domain.dll
+D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Repository\bin\Debug\netcoreapp2.1\Domain.pdb
+D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
+D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.pdb

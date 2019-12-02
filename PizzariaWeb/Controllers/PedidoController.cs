@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Domain.Models;
 using EcommerceEcoville.Utils;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Repository.DAL;
@@ -23,7 +24,12 @@ namespace PizzariaWeb.Controllers
         private readonly VendaDAO _VendaDAO;
         private readonly UtilsSession _utilsSession;
 
-        public PedidoController(TamanhoDAO tamanhoDAO, SaborDAO saborDAO, BebidaDAO bebidaDAO, VendaDAO vendaDAO, UtilsSession utilsSession)
+        private readonly UsuarioDAO _usuarioDAO;
+        private readonly UserManager<UsuarioLogado> _userManager;
+        private readonly SignInManager<UsuarioLogado> _signInManager;
+
+        public PedidoController(TamanhoDAO tamanhoDAO, SaborDAO saborDAO, BebidaDAO bebidaDAO, VendaDAO vendaDAO, UtilsSession utilsSession,
+            UsuarioDAO usuarioDAO, UserManager<UsuarioLogado> userManager, SignInManager<UsuarioLogado> signInManager)
         {
             pizzas = new List<ItemPizza>();
 
@@ -34,14 +40,19 @@ namespace PizzariaWeb.Controllers
             _bebidaDAO = bebidaDAO;
             _VendaDAO = vendaDAO;
             _utilsSession = utilsSession;
+
+            _usuarioDAO = usuarioDAO;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
         #endregion
 
         public IActionResult Index()
         {
             pizza = JsonConvert.DeserializeObject<Pizza>(_utilsSession.RetonarPizza());
+            pizzas = JsonConvert.DeserializeObject<List<ItemPizza>>(_utilsSession.RetonarPizzas());
             bebidas = JsonConvert.DeserializeObject<List<ItemBebida>>(_utilsSession.RetonarBebidas());
-
+            
             if (pizza.Tamanho != null)
             {
                 ViewBag.Tamanho = pizza.Tamanho.Nome;
@@ -116,9 +127,7 @@ namespace PizzariaWeb.Controllers
 
         public IActionResult FecharPizza()
         {
-            /*
             pizzas = JsonConvert.DeserializeObject<List<ItemPizza>>(_utilsSession.RetonarPizzas());
-
             pizza = JsonConvert.DeserializeObject<Pizza>(_utilsSession.RetonarPizza());
             ItemPizza p = new ItemPizza();
             p.Pizza = pizza;
@@ -126,48 +135,43 @@ namespace PizzariaWeb.Controllers
             pizzas.Add(p);
 
             _utilsSession.AtualizarPizzas(pizzas);
-            */
+            
             return RedirectToAction("Index");
 
         }
 
         public IActionResult TerminarPedido()
         {
-            bebidas = JsonConvert.DeserializeObject<List<ItemBebida>>(_utilsSession.RetonarBebidas());
             pizza = JsonConvert.DeserializeObject<Pizza>(_utilsSession.RetonarPizza());
+            pizzas = JsonConvert.DeserializeObject<List<ItemPizza>>(_utilsSession.RetonarPizzas());
+            bebidas = JsonConvert.DeserializeObject<List<ItemBebida>>(_utilsSession.RetonarBebidas());
 
             //pizza > listaSabores, tamanho
             //venda > lista de ItemBebida > bebida
             //venda > lista de itemPizza                       
-            
-            foreach (ItemBebida b in bebidas)
+
+            Usuario usuario = new Usuario();
+
+            if (_signInManager.IsSignedIn(User))
             {
-                ItemBebida item = new ItemBebida();
-                item.Bebida = _bebidaDAO.BuscarPorId(b.Bebida.BebidaId);
-
-                venda.ListaBebida.Add(item);
-
-                item = null;
+                usuario.Email = _userManager.GetUserName(User);
+                usuario = _usuarioDAO.BuscarPorEmail(usuario);
+            }
+            else
+            {
+                //não deixar?
             }
 
-            Pizza p = new Pizza();
-
-            foreach (ItemSabor s in pizza.itemSabores)
-            {
-                ItemSabor item = new ItemSabor();
-                item.Sabor = _saborDAO.BuscarPorId(s.Sabor.SaborId);
-                p.itemSabores.Add(item);
-
-                item = null;
-            }
-
+            venda.Usuario = usuario;
             venda.ListaBebida = bebidas;
 
+
             ItemPizza itemPizza = new ItemPizza();
-            itemPizza.Pizza = p;
+            itemPizza.Pizza = pizza;
             pizzas.Add(itemPizza);
             venda.ListaPizza = pizzas;
 
+            venda = _VendaDAO.ResbuscarItens(venda);
             _VendaDAO.Cadastrar(venda);
 
             return RedirectToAction("Index");

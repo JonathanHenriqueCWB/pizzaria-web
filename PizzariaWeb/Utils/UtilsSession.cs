@@ -81,7 +81,7 @@ namespace EcommerceEcoville.Utils
             if (_http.HttpContext.Session.
                 GetString(PIZZAS_ID) == null)
             {
-                _http.HttpContext.Session.SetString(PIZZAS_ID, JsonConvert.SerializeObject(PIZZA));
+                _http.HttpContext.Session.SetString(PIZZAS_ID, JsonConvert.SerializeObject(PIZZAS));
             }
             return _http.HttpContext.Session.GetString(PIZZAS_ID);
         }
@@ -89,11 +89,13 @@ namespace EcommerceEcoville.Utils
         public void AtualizarPizzas(List<ItemPizza> pizzas)
         {
             PIZZAS = pizzas;
-            PIZZA = null;
+            PIZZA = new Pizza();
 
-            if (_http.HttpContext.Session.GetString(PIZZA_ID) != null)
+            AtualizarPizza(PIZZA);
+
+            if (_http.HttpContext.Session.GetString(PIZZAS_ID) != null)
             {
-                _http.HttpContext.Session.SetString(PIZZA_ID, JsonConvert.SerializeObject(PIZZA));
+                _http.HttpContext.Session.SetString(PIZZAS_ID, JsonConvert.SerializeObject(PIZZAS));
             }
 
         }
