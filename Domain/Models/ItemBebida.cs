@@ -12,6 +12,5 @@ namespace Domain.Models
         [Key]
         public int ItemBebidaId { get; set; }
         public Bebida Bebida { get; set; }
-        public double Preco { get; set; }
     }
 }

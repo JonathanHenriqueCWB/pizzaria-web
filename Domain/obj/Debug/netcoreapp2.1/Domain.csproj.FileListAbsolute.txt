@@ -5,15 +5,6 @@ C:\Users\Jony\source\repos\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.Ass
 C:\Users\Jony\source\repos\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs
 C:\Users\Jony\source\repos\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.dll
 C:\Users\Jony\source\repos\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.pdb
-C:\Users\Aluno\Desktop\PizzariaWeb\Domain\bin\Debug\netcoreapp2.1\Domain.deps.json
-C:\Users\Aluno\Desktop\PizzariaWeb\Domain\bin\Debug\netcoreapp2.1\Domain.dll
-C:\Users\Aluno\Desktop\PizzariaWeb\Domain\bin\Debug\netcoreapp2.1\Domain.pdb
-C:\Users\Aluno\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.csprojAssemblyReference.cache
-C:\Users\Aluno\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.csproj.CoreCompileInputs.cache
-C:\Users\Aluno\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfoInputs.cache
-C:\Users\Aluno\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs
-C:\Users\Aluno\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.dll
-C:\Users\Aluno\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.pdb
 C:\Users\Jony\Desktop\PizzariaWeb\Domain\bin\Debug\netcoreapp2.1\Domain.deps.json
 C:\Users\Jony\Desktop\PizzariaWeb\Domain\bin\Debug\netcoreapp2.1\Domain.dll
 C:\Users\Jony\Desktop\PizzariaWeb\Domain\bin\Debug\netcoreapp2.1\Domain.pdb
@@ -55,3 +46,12 @@ D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Domain\obj\Debug\n
 D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs
 D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.dll
 D:\Renan\Renan Principal\Analise\4semestre\C#\web\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.pdb
+C:\Users\Aluno\Desktop\PizzariaWeb\Domain\bin\Debug\netcoreapp2.1\Domain.deps.json
+C:\Users\Aluno\Desktop\PizzariaWeb\Domain\bin\Debug\netcoreapp2.1\Domain.dll
+C:\Users\Aluno\Desktop\PizzariaWeb\Domain\bin\Debug\netcoreapp2.1\Domain.pdb
+C:\Users\Aluno\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.csprojAssemblyReference.cache
+C:\Users\Aluno\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfoInputs.cache
+C:\Users\Aluno\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs
+C:\Users\Aluno\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.dll
+C:\Users\Aluno\Desktop\PizzariaWeb\Domain\obj\Debug\netcoreapp2.1\Domain.pdb

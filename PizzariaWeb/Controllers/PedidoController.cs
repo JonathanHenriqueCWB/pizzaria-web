@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Domain.Models;
 using EcommerceEcoville.Utils;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -11,17 +12,19 @@ using Repository.DAL;
 
 namespace PizzariaWeb.Controllers
 {
+    [Authorize]
     public class PedidoController : Controller
     {
         #region DAO configuração
         private Venda venda;
         private Pizza pizza;
+        private double preco;
         private List<ItemBebida> bebidas;
         private List<ItemPizza> pizzas;
         private readonly TamanhoDAO _tamanhoDAO;
         private readonly SaborDAO _saborDAO;
         private readonly BebidaDAO _bebidaDAO;
-        private readonly VendaDAO _VendaDAO;
+        private readonly VendaDAO _vendaDAO;
         private readonly UtilsSession _utilsSession;
 
         private readonly UsuarioDAO _usuarioDAO;
@@ -38,7 +41,7 @@ namespace PizzariaWeb.Controllers
             _tamanhoDAO = tamanhoDAO;
             _saborDAO = saborDAO;
             _bebidaDAO = bebidaDAO;
-            _VendaDAO = vendaDAO;
+            _vendaDAO = vendaDAO;
             _utilsSession = utilsSession;
 
             _usuarioDAO = usuarioDAO;
@@ -52,6 +55,7 @@ namespace PizzariaWeb.Controllers
             pizza = JsonConvert.DeserializeObject<Pizza>(_utilsSession.RetonarPizza());
             pizzas = JsonConvert.DeserializeObject<List<ItemPizza>>(_utilsSession.RetonarPizzas());
             bebidas = JsonConvert.DeserializeObject<List<ItemBebida>>(_utilsSession.RetonarBebidas());
+            preco = JsonConvert.DeserializeObject<double>(_utilsSession.RetonarPreco());
             
             if (pizza.Tamanho != null)
             {
@@ -76,6 +80,8 @@ namespace PizzariaWeb.Controllers
 
             }
 
+                ViewBag.Preco = preco;
+
             /*if (TempData["Sabor"] != null)
             {
                 ViewBag.Sabor = TempData["Sabor"].ToString();
@@ -94,9 +100,12 @@ namespace PizzariaWeb.Controllers
         public IActionResult SelecionarTamanho(int TamanhoId)
         {
             pizza = JsonConvert.DeserializeObject<Pizza>(_utilsSession.RetonarPizza());
+            preco = JsonConvert.DeserializeObject<double>(_utilsSession.RetonarPreco());
+
 
             pizza.Tamanho = _tamanhoDAO.BuscarPorId(TamanhoId);
             _utilsSession.AtualizarPizza(pizza);
+            _utilsSession.AtualizarPreco(pizza.Tamanho.Preco);
 
             return RedirectToAction("Index");
         }
@@ -116,11 +125,13 @@ namespace PizzariaWeb.Controllers
         public IActionResult SelecionarBebida(int BebidaId)
         {
             bebidas = JsonConvert.DeserializeObject<List<ItemBebida>>(_utilsSession.RetonarBebidas());
+            preco = JsonConvert.DeserializeObject<double>(_utilsSession.RetonarPreco());
 
             ItemBebida itemBebida = new ItemBebida();
             itemBebida.Bebida = _bebidaDAO.BuscarPorId(BebidaId);
             bebidas.Add(itemBebida);
             _utilsSession.AtualizarBebida(bebidas);
+            _utilsSession.AtualizarPreco(itemBebida.Bebida.Preco + preco);
 
             return RedirectToAction("Index");
         }
@@ -171,8 +182,8 @@ namespace PizzariaWeb.Controllers
             pizzas.Add(itemPizza);
             venda.ListaPizza = pizzas;
 
-            venda = _VendaDAO.ResbuscarItens(venda);
-            _VendaDAO.Cadastrar(venda);
+            venda = _vendaDAO.ResbuscarItens(venda);
+            _vendaDAO.Cadastrar(venda);
 
             return RedirectToAction("Index");
         }

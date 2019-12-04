@@ -4,32 +4,40 @@
     ViewData["Title"] = "Login";
 }
 
-<h2>Login</h2>
+<div class="row justify-content-center">
+    <div class="card w-50">
+        <div class="card-header row justify-content-between">
+            <div class="col-12 col-md-12">
+                <h2>Login</h2>
+            </div>
+        </div>
 
-<h4>Usuario</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Login">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
+        <div class="card-body">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <form asp-action="Login">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Senha" class="control-label"></label>
+                            <input asp-for="Senha" class="form-control" />
+                            <span asp-validation-for="Senha" class="text-danger"></span>
+                        </div>
+                        <div >
+                            <input type="submit" value="Acessar" class="w-100 btn btn-info" />
+                        </div>
+                        <hr class="bg-white" />
+                        <div >
+                            <a asp-action="Cadastrar" asp-controller="Usuario" class="w-100 btn btn-info" asp-action="Cadastrar">Cadastrar</a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Senha" class="control-label"></label>
-                <input asp-for="Senha" class="form-control" />
-                <span asp-validation-for="Senha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </form>
+
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-

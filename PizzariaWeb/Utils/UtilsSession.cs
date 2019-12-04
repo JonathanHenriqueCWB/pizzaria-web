@@ -21,6 +21,9 @@ namespace EcommerceEcoville.Utils
         private Pizza PIZZA = new Pizza();
         private string PIZZA_ID = "Pizza_id";
 
+        private double PRECO = 0;
+        private string PRECO_ID = "Preco_id";
+
         public UtilsSession(IHttpContextAccessor http)
         {
             _http = http;
@@ -98,6 +101,27 @@ namespace EcommerceEcoville.Utils
                 _http.HttpContext.Session.SetString(PIZZAS_ID, JsonConvert.SerializeObject(PIZZAS));
             }
 
+        }
+
+        public string RetonarPreco()
+        {
+
+            if (_http.HttpContext.Session.
+                GetString(PRECO_ID) == null)
+            {
+                _http.HttpContext.Session.SetString(PRECO_ID, JsonConvert.SerializeObject(PRECO));
+            }
+            return _http.HttpContext.Session.GetString(PRECO_ID);
+        }
+
+        public void AtualizarPreco(double preco)
+        {
+            PRECO += preco;
+
+            if (_http.HttpContext.Session.GetString(PIZZAS_ID) != null)
+            {
+                _http.HttpContext.Session.SetString(PRECO_ID, JsonConvert.SerializeObject(PRECO));
+            }
         }
     }
 }

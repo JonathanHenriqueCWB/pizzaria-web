@@ -48,12 +48,16 @@ namespace Repository.DAL
                 TempVenda.ListaBebida.Add(TempItemBebida);
 
                 TempItemBebida = null;
+                TempVenda.Preco += TempItemBebida.Bebida.Preco;
             }
 
             foreach (ItemPizza itemPizza in venda.ListaPizza)
             {
                 Pizza TempPizza = new Pizza();
                 TempPizza.Tamanho = _tamanhoDAO.BuscarPorId(itemPizza.Pizza.Tamanho.TamanhoId);
+
+                TempVenda.Preco += TempPizza.Tamanho.Preco;
+
 
                 foreach (ItemSabor itemSabor in itemPizza.Pizza.itemSabores)
                 {

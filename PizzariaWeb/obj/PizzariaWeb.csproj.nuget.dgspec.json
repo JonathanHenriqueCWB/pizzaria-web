@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj": {}
+    "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
+    "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Willian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Willian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -50,31 +55,30 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     },
-    "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj": {
+    "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
         "projectName": "PizzariaWeb",
-        "projectPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
-        "packagesPath": "C:\\Users\\Willian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\PizzariaWeb\\obj\\",
+        "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
+        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\PizzariaWeb\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Willian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -86,11 +90,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj"
+              "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj"
+              "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj"
               }
             }
           }
@@ -116,7 +120,6 @@
               "version": "[2.1.2, )"
             },
             "Microsoft.NETCore.App": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
@@ -131,31 +134,30 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     },
-    "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj": {
+    "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Willian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Willian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -167,8 +169,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Willian\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj"
+              "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj"
               }
             }
           }
@@ -194,16 +196,10 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }

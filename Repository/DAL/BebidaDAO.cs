@@ -31,11 +31,18 @@ namespace Repository.DAL
 
         public List<Bebida> Listar()
         {
-            return _context.Bebidas.ToList();
+            return _context.Bebidas.Where(x => x.Desabilitado == false).ToList();
         }
-        public void Remover(int id)
+        public void Remover(Bebida bebida)
         {
-            _context.Bebidas.Remove(BuscarPorId(id));
+            bebida.Desabilitado = true;
+            _context.Bebidas.Update(bebida);
+            //_context.Bebidas.Remove(BuscarPorId(id));
+            _context.SaveChanges();
+        }
+        public void Alterar(Bebida b)
+        {
+            _context.Bebidas.Update(b);
             _context.SaveChanges();
         }
     }

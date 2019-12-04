@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Domain.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -41,7 +42,9 @@ namespace PizzariaWeb.Controllers
             if (TempData["Endereco"] != null)
             {
                 string resultado = TempData["Endereco"].ToString();
-                Endereco endereco = JsonConvert.DeserializeObject<Endereco>(resultado);
+                Endereco endereco =
+                    JsonConvert.DeserializeObject<Endereco>
+                    (resultado);
                 u.Endereco = endereco;
             }
             return View(u);
@@ -109,9 +112,11 @@ namespace PizzariaWeb.Controllers
         [HttpPost]
         public IActionResult BuscarCep(Usuario u)
         {
-            string url = "https://viacep.com.br/ws/" + u.Endereco.Cep + "/json/";
+            string url = "https://viacep.com.br/ws/" +
+                u.Endereco.Cep + "/json/";
             WebClient client = new WebClient();
             TempData["Endereco"] = client.DownloadString(url);
+
             return RedirectToAction(nameof(Cadastrar));
         }
         #endregion

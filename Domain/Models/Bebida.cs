@@ -14,6 +14,7 @@ namespace Domain.Models
         public string Nome { get; set; }
         public Double Preco { get; set; }
         public DateTime CriadoEm { get; set; }
+        public bool Desabilitado { get; set; }
 
         public Bebida()
         {

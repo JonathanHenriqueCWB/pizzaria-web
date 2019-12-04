@@ -26,6 +26,8 @@ namespace Domain.Models
         public string ConfirmacaoSenha { get; set; }
         public Endereco Endereco { get; set; }
 
+        public bool Admin { get; set; }
+
         public Usuario()
         {
             Endereco endereco = new Endereco();

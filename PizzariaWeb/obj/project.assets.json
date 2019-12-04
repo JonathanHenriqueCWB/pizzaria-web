@@ -12663,24 +12663,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Valdirene\\.nuget\\packages\\": {},
+    "C:\\Users\\Aluno\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Renan\\Renan Principal\\Analise\\4semestre\\C#\\web\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
       "projectName": "PizzariaWeb",
-      "projectPath": "D:\\Renan\\Renan Principal\\Analise\\4semestre\\C#\\web\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
-      "packagesPath": "C:\\Users\\Valdirene\\.nuget\\packages\\",
-      "outputPath": "D:\\Renan\\Renan Principal\\Analise\\4semestre\\C#\\web\\PizzariaWeb\\PizzariaWeb\\obj\\",
+      "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\PizzariaWeb\\PizzariaWeb.csproj",
+      "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\PizzariaWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Valdirene\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -12692,11 +12695,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Renan\\Renan Principal\\Analise\\4semestre\\C#\\web\\PizzariaWeb\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\Renan\\Renan Principal\\Analise\\4semestre\\C#\\web\\PizzariaWeb\\Domain\\Domain.csproj"
+            "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Domain\\Domain.csproj"
             },
-            "D:\\Renan\\Renan Principal\\Analise\\4semestre\\C#\\web\\PizzariaWeb\\Repository\\Repository.csproj": {
-              "projectPath": "D:\\Renan\\Renan Principal\\Analise\\4semestre\\C#\\web\\PizzariaWeb\\Repository\\Repository.csproj"
+            "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\Desktop\\PizzariaWeb\\Repository\\Repository.csproj"
             }
           }
         }

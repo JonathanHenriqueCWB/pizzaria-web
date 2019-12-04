@@ -27,6 +27,8 @@ namespace Repository.Migrations
 
                     b.Property<DateTime>("CriadoEm");
 
+                    b.Property<bool>("Desabilitado");
+
                     b.Property<string>("Nome");
 
                     b.Property<double>("Preco");
@@ -99,8 +101,6 @@ namespace Repository.Migrations
 
                     b.Property<int?>("BebidaId");
 
-                    b.Property<double>("Preco");
-
                     b.Property<int?>("VendaId");
 
                     b.HasKey("ItemBebidaId");
@@ -119,8 +119,6 @@ namespace Repository.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int?>("PizzaId");
-
-                    b.Property<double>("Preco");
 
                     b.Property<int?>("VendaId");
 
@@ -204,6 +202,8 @@ namespace Repository.Migrations
                     b.Property<int>("UsuarioId")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool>("Admin");
 
                     b.Property<string>("Email");
 

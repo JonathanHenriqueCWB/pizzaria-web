@@ -36,7 +36,21 @@ namespace PizzariaWeb.Controllers
         #region REMOVER
         public IActionResult Remover(int id)
         {
-            _bebidaDAO.Remover(id);
+            _bebidaDAO.Remover(_bebidaDAO.BuscarPorId(id));
+            return RedirectToAction("Index");
+        }
+        #endregion
+
+        #region ALTERAR
+        public IActionResult Alterar(int? id)
+        {
+            return View(_bebidaDAO.BuscarPorId(id));
+        }
+
+        [HttpPost]
+        public IActionResult Alterar(Bebida b)
+        {
+            _bebidaDAO.Alterar(b);
             return RedirectToAction("Index");
         }
         #endregion

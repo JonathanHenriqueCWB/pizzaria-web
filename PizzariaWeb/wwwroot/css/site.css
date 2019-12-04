@@ -60,7 +60,7 @@ body {
 .main-menu ul li a {
     color: #CC0000;
     font-size: 1.2em;
-    border-bottom: 1px solid #CC0000;
+    /*border-bottom: 1px solid #CC0000;*/
 }
 
     .main-menu ul li a:hover {
